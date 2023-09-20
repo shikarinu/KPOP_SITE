@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+body{background-image: url(../img/a1.jpg);}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+
+textarea {
+    background-color: gray;
+}
+
+label {
+    display: block;
+    text-align: center;
+    
+    cursor: pointer;
+    padding: 0.5em;
+    color: #b5a1a1;
+    background: hsl(253, 53%, 31%);
+    font-weight: bold;
+    border-radius: 25px;
+    margin-top: 0.5em;
+    margin-left: -1px;
+    opacity: 0.75;
+}
+ul {
+    list-style: none;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.8s;
+    margin-top: 0.5px;
+    opacity: 0.75;
+}
+
+/*　メニューの長さの指定　*/
+#acm1:checked+ul {
+    height: 52.5em;
+    
+}
+
+#acm2:checked+ul {
+    height: 2.4em;
+    
+}
+
+#acm3:checked+ul {
+    height: 10em;
+    
+}
+
+#acm4:checked+ul {
+    height: 12.5em;
+    
+}
+
+#acm5:checked+ul {
+    height: 22em;
+    
+}
+
+#acm6:checked+ul {
+    height: 15em;
+    
+}
+
+#acm7:checked+ul {
+    height: 14.5em;
+}
+
+#acm8:checked+ul {
+    height: 10em;
+}
+
+#acm9:checked+ul {
+    height: 17.5em;
+}
+
+#acm10:checked+ul {
+    height: 5em;
+}
+
+#acm11:checked+ul {
+    height: 24.5em;
+}
+
+#acm12:checked+ul {
+    height: 12.5em;
+}
+
+#acm13:checked+ul {
+    height: 5em;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 8px;
+    text-align: left;
+    vertical-align: text-top;
+    margin-top: 5px;
+    
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    padding: 0.8em 0.8em 0.8em;
+    color: #ffffff;
+    background: #16365a;
+    text-align: center;
+    border-radius: 35px;
+}
+
+a:active {
+    background-color: #ccc914;
+
+}
+
+li:last-child a {
+    padding-bottom: 0.8em;
+    
+}
+
+
+.fadeDown{
+    animation-name:fadeDownAnime;
+    animation-duration:5s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+
+    p {
+        color: #d3d5d1;
+        padding: 0px 0;
+        position:fixed;
+        bottom: 1px;
+        right: 50%;
+        font-size: xx-large;
+    } 
+#footer {
+  width: 100%;
+  height: 30px; 
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgb(59, 37, 99);
+  position:fixed;
+  margin-left: -9px;
+  bottom: 0px;
+  color: #FFFFFF;
+}
+
+#p_ {
+    margin-bottom: 8px;
+}
+    @keyframes fadeDownAnime{
+      from {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+    
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+@media (min-width:1025px) and (max-width:1279px) {
+    
+    #title1 {
+        position: relative;
+        position: fixed;
+        width: 100%;
+        height: 1.5em;
+        text-align: center;
+        font-size: medium;
+        background-color: rgba(50, 163, 220, 0.391);
+        color: #d3d5d1;
+        top: 0px;
+        margin-left: -9px;
+        border-radius: 6px;
+        z-index: 1;
+        
+    }
+
+    #output {
+        position: fixed;
+        margin-right: 0px;
+        top: 50px;
+        left: 0px;
+        width: 70%;
+        height: 400px;
+        background-color: darkgray;
+        background-size: cover;
+        border-radius: 6px;
+       z-index: 1;
+       border: 6px dashed #433d85;
+        
+
+    }
+
+    aside {
+        position: absolute;
+        width: 25%;
+        top: 30px;
+        right:30px;
+        z-index: -1;
+    }
+
+    #op {display: none;}
+    
+} 
+    
+    
+
+@media (min-width:1280px) {
+    
+    #title1 {
+        position: relative;
+        position: fixed;
+        width: 100%;
+        height: 1.5em;
+        text-align: center;
+        font-size: medium;
+        background-color: rgba(50, 163, 220, 0.391);
+        color: #d3d5d1;
+        top: 0px;
+        margin-left: -8px;
+        border-radius: 6px;
+        z-index: 1;
+        
+    }
+
+    #output {
+        position: fixed;
+        margin-right: 0px;
+        top: 50px;
+        left:40px;
+        width: 70%;
+        height: 696px;
+        background-color: darkgray;
+        background-size: cover;
+        border: 6px dashed #433d85;
+        border-radius: 6px;
+        z-index: 1;
+        box-shadow: -24px 27px 15px -5px #4644a7;
+    }
+
+    aside {
+        position: absolute;
+        width: 25%;
+        top: 30px;
+        right:5px;
+        z-index: -1;
+    }
+
+    #op {display: none;}
+
+    textarea {
+        background-color: gray;
+        width: 305px;
+        z-index: 1;
+    }
+    
+} 
+
+@media (min-width:1440px) {
+    #title1 {
+        position: relative;
+        position: fixed;
+        width: 100%;
+        height: 1.5em;
+        text-align: center;
+        font-size: 45px;
+        background-color: rgb(59, 37, 99);
+        color: #d3d5d1;
+        top: 0px;
+        margin-left: -8px;
+        border-radius: 6px;
+        z-index: 1;
+    }
+
+    #output {
+        position: fixed;
+        top: 90px;
+        left: 50px;
+        width: 57%;
+        height: 696px;
+        background-color: darkgray;
+        background-size: cover;
+        border-radius: 10px;
+        z-index: 1;
+        border: 6px dashed #FFFFFF;
+        box-shadow: -24px 27px 15px -5px #4644a7;
+    }
+
+    aside {
+        width: 35%;
+        top: 80px;
+        right: 50px;
+        position: absolute;
+        z-index: -1;
+    }
+
+        #op {
+            display: none;
+        }
+
+        textarea {
+            background-color: gray;
+            width: 550px;
+        }
+}
+
+@media (min-width:1920px) {
+    
+    #title1 {
+        position: relative;
+        position: fixed;
+        width: 100%;
+        height: 1.5em;
+        text-align: center;
+        font-size: 45px;
+        background-color: rgb(75, 101, 188);
+        color: #d3d5d1;
+        top: 0px;
+        margin-left: -8px;
+        border-radius: 6px;
+        z-index: 1;
+        border-top: 300px;
+
+    }
+
+    #output {
+        position: fixed;
+        
+        top: 160px;
+        left: 40px;
+        width: 58%;
+        height: 696px;
+        background-color: rgb(12, 19, 47);
+     
+        border: 6px dashed #433d85;
+        border-radius: 10px;
+       z-index: 1;
+       box-shadow: -24px 27px 15px -5px #4644a7;
+       
+    }
+
+    aside {
+        width: 20.1%;
+        position: absolute;
+        right: 300px;
+        top: 160px;
+        z-index: 1;
+        background-color: rgb(75, 101, 188);
+        border-radius: 13px;
+        box-shadow: -24px 27px 15px -5px #4644a7;
+    }
+
+   
+
+textarea {
+    background-color: rgb(47, 63, 88);
+    width: 415px;
+    z-index: 1;
+    color: #ffffff;
+    border-radius: 13px;
+    }
+}
